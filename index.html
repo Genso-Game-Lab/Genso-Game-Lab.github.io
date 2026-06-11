@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genso Game Lab - 遊んで学べるゲーム集</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background:#0f172a; color:#e2e8f0;
+    display:flex; flex-direction:column; align-items:center;
+    min-height:100vh;
+  }
+  .wrap { width:min(94vw, 480px); padding:28px 0 40px; }
+  header { text-align:center; margin-bottom:24px; }
+  h1 { font-size:1.7rem; letter-spacing:.04em; }
+  h1 .flask { font-size:2.4rem; display:block; margin-bottom:6px; }
+  header p { color:#94a3b8; font-size:.8rem; margin-top:6px; }
+
+  .games { display:flex; flex-direction:column; gap:14px; }
+  a.game {
+    display:flex; align-items:center; gap:14px;
+    background:#1e293b; border-radius:16px; padding:16px;
+    text-decoration:none; color:#e2e8f0;
+    box-shadow:0 2px 8px rgba(0,0,0,.35);
+    transition:transform .12s ease, box-shadow .12s ease;
+    border-left:6px solid;
+  }
+  a.game:active { transform:scale(.98); }
+  .g1 { border-color:#3b82f6; }
+  .g2 { border-color:#22c55e; }
+  .g3 { border-color:#a78bfa; }
+  .g4 { border-color:#facc15; }
+  .icon { font-size:2.6rem; line-height:1; flex-shrink:0; }
+  .info { flex:1; min-width:0; }
+  .title-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .gtitle { font-size:1.05rem; font-weight:bold; }
+  .tag {
+    font-size:.6rem; font-weight:bold; padding:2px 8px; border-radius:99px;
+    background:#334155; color:#cbd5e1; white-space:nowrap;
+  }
+  .desc { font-size:.74rem; color:#94a3b8; margin-top:4px; line-height:1.5; }
+  .play {
+    flex-shrink:0; font-size:1.4rem; color:#475569;
+  }
+  footer { text-align:center; margin-top:28px; font-size:.65rem; color:#475569; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="flask">🧪</span>Genso Game Lab</h1>
+    <p>遊んでいるうちに勉強になっちゃうゲーム集</p>
+  </header>
+
+  <div class="games">
+    <a class="game g1" href="https://genso-game-lab.github.io/element-merge/">
+      <div class="icon">🧩</div>
+      <div class="info">
+        <div class="title-row"><span class="gtitle">元素マージ</span><span class="tag">理科・元素記号</span></div>
+        <div class="desc">同じ元素を合体させて進化！H→He→Li→…クリア目標はNe、真のクリアはMg。2048系パズル</div>
+      </div>
+      <div class="play">▶</div>
+    </a>
+
+    <a class="game g2" href="https://genso-game-lab.github.io/compound-craft/">
+      <div class="icon">⚗️</div>
+      <div class="info">
+        <div class="title-row"><span class="gtitle">化合物クラフト</span><span class="tag">中2理科・化学式</span></div>
+        <div class="desc">原子を組み合わせて「H₂Oをつくれ！」全18ステージ。硫化鉄や酸化銅など実験の定番も登場</div>
+      </div>
+      <div class="play">▶</div>
+    </a>
+
+    <a class="game g3" href="https://genso-game-lab.github.io/ion-puzzle/">
+      <div class="icon">⚡</div>
+      <div class="info">
+        <div class="title-row"><span class="gtitle">イオンパズル ピッタリゼロ</span><span class="tag">中3理科・イオン</span></div>
+        <div class="desc">陽イオン＋陰イオンで電荷をピッタリ0に！組成式の作り方が身につく全17ステージ</div>
+      </div>
+      <div class="play">▶</div>
+    </a>
+
+    <a class="game g4" href="https://genso-game-lab.github.io/phonics-builder/">
+      <div class="icon">🔤</div>
+      <div class="info">
+        <div class="title-row"><span class="gtitle">フォニックスビルダー</span><span class="tag">英語・発音とつづり</span></div>
+        <div class="desc">音のパーツで英単語を組み立てよう！ネイティブ発音つき。マジックeや2文字1音も学べる全20ステージ</div>
+      </div>
+      <div class="play">▶</div>
+    </a>
+  </div>
+
+  <footer>🧪 Genso Game Lab — あたらしいゲームも増えていく予定！</footer>
+</div>
+</body>
+</html>
